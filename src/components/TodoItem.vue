@@ -4,7 +4,7 @@
     :to="{ name: 'item-details', params: { id: item.id } }"
   >
     <div class="card" :class="item.finished ? 'finished' : ''">
-      <img :src="logoPath" alt="" />
+      <img :src="'/src/assets/' + item.logo" :alt="item.title" />
       <h2>{{ item.title }}</h2>
       <p>{{ item.date }}</p>
     </div>
@@ -12,21 +12,13 @@
 </template>
 
 <script setup>
-import { ref, watchEffect } from 'vue'
+import { ref } from 'vue'
 
 const props = defineProps({
   item: {
     type: Object,
     required: true,
   },
-})
-
-const logoPath = ref()
-
-watchEffect(async () => {
-  logoPath.value = (
-    await import(/* @vite-ignore */ `../assets/${props.item.logo}`)
-  ).default
 })
 </script>
 
