@@ -33,37 +33,6 @@ onMounted(() => {
   //     console.log(error)
   //   })
 })
-
-// const items = reactive([
-//   {
-//     id: 1,
-//     title: 'Vue3学习',
-//     date: '2023-03-24',
-//     logo: '/src/assets/vue3.png',
-//     finished: false,
-//   },
-//   {
-//     id: 2,
-//     title: 'Vite学习',
-//     date: '2023-03-23',
-//     logo: '/src/assets/vite.png',
-//     finished: false,
-//   },
-//   {
-//     id: 3,
-//     title: 'Pinia学习',
-//     date: '2023-03-23',
-//     logo: '/src/assets/pinia.png',
-//     finished: true,
-//   },
-//   {
-//     id: 4,
-//     title: 'Ts学习',
-//     date: '2023-03-22',
-//     logo: '/src/assets/ts.png',
-//     finished: true,
-//   },
-// ])
 </script>
 
 <style scoped>
