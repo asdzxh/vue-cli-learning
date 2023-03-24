@@ -4,7 +4,7 @@
     :to="{ name: 'item-details', params: { id: item.id } }"
   >
     <div class="card" :class="item.finished ? 'finished' : ''">
-      <img :src="'/src/assets/' + item.logo" :alt="item.title" />
+      <!-- <img :src="'/src/assets/' + item.logo" :alt="item.title" /> -->
       <h2>{{ item.title }}</h2>
       <p>{{ item.date }}</p>
     </div>
