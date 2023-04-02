@@ -1,10 +1,7 @@
 <template>
-  <RouterLink
-    class="item-link"
-    :to="{ name: 'item-details', params: { id: item.id } }"
-  >
+  <RouterLink class="item-link" :to="{ name: 'item-details', params: { id: item.id } }">
     <div class="card" :class="item.finished ? 'finished' : ''">
-      <!-- <img :src="'/src/assets/' + item.logo" :alt="item.title" /> -->
+      <img :src="'/src/assets/' + item.logo" :alt="item.title" />
       <h2>{{ item.title }}</h2>
       <p>{{ item.date }}</p>
     </div>
@@ -31,6 +28,7 @@ const props = defineProps({
   cursor: pointer;
   margin: 10px;
 }
+
 .card img {
   width: 80px;
   height: 80px;
